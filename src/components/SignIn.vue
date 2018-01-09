@@ -5,7 +5,7 @@
 			<input v-model="user.email" type="email" placeholder="Введите email:*" class="form-control" id="email" required>
 		</div>
 		<div class="form-group">
-			<label for="password">Ваш пароль (минимум 6 символов):</label>
+			<label for="password">Ваш пароль:</label>
 			<input v-model="user.password" type="password" placeholder="Введите пароль:*" class="form-control" id="password" required>
 		</div>
 		<button class="btn btn-primary" type="submit">Войти</button>
