@@ -7,8 +7,11 @@
 			</span>
 		</form>
 		<ol class="mt-5">
-			<li v-for="(serial,index) in data.serials" :key="serial" @click="removeSerial(index)">
-				{{ serial }}
+			<li v-for="(serial,index) in data.serials" :key="serial">
+				<span>{{ serial }}</span>
+				<button type="button" class="close" aria-label="Close" @click="removeSerial(index)">
+					<span aria-hidden="true">&times;</span>
+				</button>
 			</li>
 		</ol>
 		<div class="mt-5">
